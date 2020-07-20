@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- inside the head, attach all the exteral links -->
+    <!-- we are linking it to CSS, javascript & Bootstrap 4 -->
+    <!-- why are we doing this? because we are using a lot of bootstrap, styling codes -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<!-- for a Responsive website - add this code -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Css code for video -->
+/* Style the video: 100% width and height to cover the entire window */
+<style>
+#myVideo {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: sticky;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  padding: 20px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: black;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+</style>
+<!-- Css code for video end here -->
+<!-- JAva code for video -->
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+</script>
+
+
+
+<!-- Nabar will be inside Head -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html">ENIMAJI</a>
+ 
+  <ul class="navbar-nav ml-auto">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="about.html">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="blog.html">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+
+</ul>
+</nav>
+
+
+  </head>
+  <section>
+<div class="container"> <!-- this cod is required so that everything fits inside grid -->
+
+<h1 class="text-center pt-5" >About us</h1>
+<hr class="w-25 mx-auto pt-2">
+<!-- grid code starts here -->
+<div class="row">  <!-- teel the computer that have row in a grid-->
+    <div class="col-xl-6 col-md-6 col-12"> <!-- this make your screen responsive on large/medium/small screens -->
+    <img src="nick-silva-rewrite-final-artstation.jpg" class="img-fluid" width="613" height="345">
+</div>
+
+<div class="col">
+  <h1> Animation community is the place to share all creativity </h1>
+  <br>
+  <!-- HTML Code for READ MORE BUTTON -->
+   <p>This is a place for animation lovers to share their experiences and personal products to everyone. The community has services like reference trading, and animation classes<span id="dots">...</span><span id="more">You can spend your creativity and exchange with professional and experienced artists. Let's build a community together, but the person who loves animation is good and growing
+.</span></p>
+  <br>
+
+<button onclick="myFunction()" id="myBtn" type="button" class="btn btn-outline-primary">Read more</button>
+<!-- CSS CODR FOR READ MORE -->
+<style>
+  #more {display: none;}
+</style>
+<!-- JAVascrcipt code-->
+<script>
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+</div>
+<br>
+<br>
+<br>
+
+<section>
+<div class="container"> <!-- this cod is required so that everything fits inside grid -->
+
+<hr class="w-25 mx-auto pt-2">
+<!-- grid code starts here -->
+<div class="row">  <!-- teel the computer that have row in a grid-->
+    <div class="col-xl-6 col-md-6 col-12"> <!-- this make your screen responsive on large/medium/small screens -->
+    <img src="2.jpg" class="img-fluid" width="613" height="345">
+</div>
+
+<div class="col">
+  <h1> Animation community is the place to share all creativity </h1>
+  <br>
+  <!-- HTML Code for READ MORE BUTTON -->
+   <p>This is a place for animation lovers to share their experiences and personal products to everyone. The community has services like reference trading, and animation classes<span id="dots">...</span><span id="more">You can spend your creativity and exchange with professional and experienced artists. Let's build a community together, but the person who loves animation is good and growing
+.</span></p>
+  <br>
+
+<button onclick="myFunction()" id="myBtn" type="button" class="btn btn-outline-primary">Read more</button>
+<!-- CSS CODR FOR READ MORE -->
+<style>
+  #more {display: none;}
+</style>
+<!-- JAVascrcipt code-->
+<script>
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+</div>
+<br>
+<br>
+<section>
+<div class="container"> <!-- this cod is required so that everything fits inside grid -->
+
+<hr class="w-25 mx-auto pt-2">
+<!-- grid code starts here -->
+<div class="row">  <!-- teel the computer that have row in a grid-->
+    <div class="col-xl-6 col-md-6 col-12"> <!-- this make your screen responsive on large/medium/small screens -->
+    <img src="4.jpg" class="img-fluid" width="613" height="345">
+</div>
+
+<div class="col">
+  <h1> Animation community is the place to share all creativity </h1>
+  <br>
+  <!-- HTML Code for READ MORE BUTTON -->
+   <p>This is a place for animation lovers to share their experiences and personal products to everyone. The community has services like reference trading, and animation classes<span id="dots">...</span><span id="more">You can spend your creativity and exchange with professional and experienced artists. Let's build a community together, but the person who loves animation is good and growing
+.</span></p>
+  <br>
+
+<button onclick="myFunction()" id="myBtn" type="button" class="btn btn-outline-primary">Read more</button>
+<!-- CSS CODR FOR READ MORE -->
+<style>
+  #more {display: none;}
+</style>
+<!-- JAVascrcipt code-->
+<script>
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+</div>
